@@ -24,4 +24,8 @@ public class Node {
     public void setNext(Node next) {
         this.next = next;
     }
+
+    public void setNext(Object next) {
+        this.next = new Node(next);
+    }
 }

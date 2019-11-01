@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class Queue {
     private ImmutableLinkedList linkQ;
 
-    public Queue(){
+    public Queue() {
         this.linkQ = new ImmutableLinkedList();
     }
 
@@ -20,6 +20,7 @@ public class Queue {
         linkQ = linkQ.removeFirst();
         return first;
     }
+
     public void enqueue(Object e) {
         linkQ = linkQ.addLast(e);
     }

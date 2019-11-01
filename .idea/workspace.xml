@@ -20,7 +20,16 @@
   </component>
   <component name="ProjectId" id="1SjaZOdqFSJF6LIDJcHwWL0gUu5" />
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/collections" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW2\apps19dubnevych-hw2\src\test\java\ua\edu\ucu\collections" />
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW2\apps19dubnevych-hw2\src\test\java\ua\edu\ucu\collections\immutable" />
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW2\apps19dubnevych-hw2\src\main\java\ua\edu\ucu\collections" />
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW2\apps19dubnevych-hw2\src\main\java\ua\edu\ucu\collections\immutable" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,6 +42,76 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ImmutableLinkedListTest">
+    <configuration name="ImmutableArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImmutableCollections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.collections.immutable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.collections.immutable" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.collections.immutable.ImmutableArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImmutableLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImmutableCollections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.collections.immutable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.collections.immutable" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.collections.immutable.ImmutableLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImmutableCollections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.collections" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.collections.QueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ImmutableCollections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.collections" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.collections.StackTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ImmutableLinkedListTest" />
+        <item itemvalue="JUnit.ImmutableArrayListTest" />
+        <item itemvalue="JUnit.StackTest" />
+        <item itemvalue="JUnit.QueueTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

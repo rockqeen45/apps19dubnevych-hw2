@@ -2,67 +2,140 @@ package ua.edu.ucu.collections.immutable;
 
 
 public class ImmutableArrayList implements ImmutableList {
+    private Object[] array;
+
     public ImmutableArrayList() {
-
-    }
-    @Override
-    public ImmutableList add(Object e) {
-
-        return null;
+        this.array = new Object[0];
     }
 
-    @Override
-    public ImmutableList add(int index, Object e) {
-        return null;
+    public ImmutableArrayList(Object[] array) {
+        this.array = array;
     }
 
     @Override
-    public ImmutableList addAll(Object[] c) {
-        return null;
+    public ImmutableArrayList add(Object e) {
+        Object[] arr = new Object[array.length + 1];
+        for(int i = 0; i < array.length; i++) {
+            arr[i] = array[i];
+        }
+        arr[arr.length - 1] = e;
+        return new ImmutableArrayList(arr);
     }
 
     @Override
-    public ImmutableList addAll(int index, Object[] c) {
-        return null;
+    public ImmutableArrayList add(int index, Object e) {
+        if(index > size() || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        Object[] arr = new Object[array.length + 1];
+        for(int i = 0; i < index; i++) {
+            arr[i] = array[i];
+        }
+        arr[index] = e;
+        for(int i = index; i < array.length; i++) {
+            arr[i + 1] = array[i];
+        }
+        return new ImmutableArrayList(arr);
     }
+
+    @Override
+    public ImmutableArrayList addAll(Object[] c) {
+        Object[] arr = new Object[array.length + c.length];
+        for(int i = 0; i < array.length; i++) {
+            arr[i] = array[i];
+        }
+        for(int j = 0; j < c.length; j++) {
+            arr[j + array.length] = c[j];
+        }
+        return new ImmutableArrayList(arr);
+    }
+
+    @Override
+    public ImmutableArrayList addAll(int index, Object[] c) {
+        if(index > size() || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        Object[] arr = new Object[array.length + c.length];
+        for(int i = 0; i < index; i++) {
+            arr[i] = array[i];
+        }
+        for(int j = 0; j < c.length; j++) {
+            arr[j + index] = c[j];
+        }
+        for(int i = index; i < array.length; i++) {
+            arr[i + c.length] = array[i];
+        }
+        return new ImmutableArrayList(arr);
+    }
+
 
     @Override
     public Object get(int index) {
-        return null;
+        if(index > size() || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        return array[index];
     }
 
     @Override
-    public ImmutableList remove(int index) {
-        return null;
+    public ImmutableArrayList remove(int index) {
+        if(index > size() || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        Object[] arr = new Object[array.length - 1];
+        for(int i = 0; i < index; i++) {
+            arr[i] = array[i];
+        }
+        for (int i = index + 1; i < array.length; i++) {
+            arr[i-1] = array[i];
+        }
+        return new ImmutableArrayList(arr);
     }
 
     @Override
-    public ImmutableList set(int index, Object e) {
-        return null;
+    public ImmutableArrayList set(int index, Object e) {
+        if(index > size() || index < 0){
+            throw new IndexOutOfBoundsException();
+        }
+        Object[] arr = new Object[array.length];
+        for (int i = 0; i < array.length; i++) {
+            arr[i] = array[i];
+        }
+        arr[index] = e;
+        return new ImmutableArrayList(arr);
     }
 
     @Override
     public int indexOf(Object e) {
-        return 0;
+        int i = 0;
+        try {
+            while (array[i] != e) {
+                i++;
+            }
+            return i;
+        }
+        catch (Exception ex) {
+            return -1;
+        }
     }
 
     @Override
     public int size() {
-        return 0;
+        return array.length;
     }
 
     @Override
-    public ImmutableList clear() {
-        return null;
+    public ImmutableArrayList clear() {
+        return new ImmutableArrayList();
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return array.length == 0;
     }
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        return array;
     }
 }
