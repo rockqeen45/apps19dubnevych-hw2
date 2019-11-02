@@ -27,7 +27,7 @@ public class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public ImmutableLinkedList add(int index, Object e) {
-        if(index > size() || index < 0) {
+        if (index > size() || index < 0) {
             throw new IndexOutOfBoundsException();
         }
 
@@ -76,7 +76,7 @@ public class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public ImmutableLinkedList addAll(int index, Object[] c) {
-        if(index > size() || index < 0){
+        if (index > size() || index < 0) {
             throw new IndexOutOfBoundsException();
         }
         ImmutableLinkedList newList = this.add(index, c[0]);
@@ -90,7 +90,7 @@ public class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public Object get(int index) {
-        if(index > size() || index < 0){
+        if (index > size() || index < 0) {
             throw new IndexOutOfBoundsException();
         }
         else {
@@ -107,7 +107,7 @@ public class ImmutableLinkedList implements ImmutableList {
     @Override
     public ImmutableLinkedList remove(int index) {
         ImmutableLinkedList newList = new ImmutableLinkedList();
-        if(index > size() || index < 0){
+        if (index > size() || index < 0) {
             throw new IndexOutOfBoundsException();
         }
         else {
@@ -140,7 +140,7 @@ public class ImmutableLinkedList implements ImmutableList {
     @Override
     public ImmutableLinkedList set(int index, Object e) {
         ImmutableLinkedList newList = new ImmutableLinkedList();
-        if(index > size() || index < 0){
+        if (index > size() || index < 0) {
             throw new IndexOutOfBoundsException();
         }
         else {
@@ -181,7 +181,7 @@ public class ImmutableLinkedList implements ImmutableList {
                 current = current.getNext();
                 pos++;
             }
-        } catch (Exception exc){
+        } catch (Exception exc) {
             return -1;
         }
         return pos;
@@ -224,11 +224,11 @@ public class ImmutableLinkedList implements ImmutableList {
         return arr;
     }
 
-    public ImmutableLinkedList addFirst(Object e) { // додає елемент у початок зв'язаного списку
+    public ImmutableLinkedList addFirst(Object e) {
         return this.add(0, e);
     }
 
-    public ImmutableLinkedList addLast(Object e) {  // додає елемент у кінець зв'язаного списку
+    public ImmutableLinkedList addLast(Object e) {
         return this.add(e);
     }
 
