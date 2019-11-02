@@ -113,8 +113,7 @@ public class ImmutableArrayList implements ImmutableList {
                 i++;
             }
             return i;
-        }
-        catch (Exception ex) {
+        } catch (IndexOutOfBoundsException ex) {
             return -1;
         }
     }

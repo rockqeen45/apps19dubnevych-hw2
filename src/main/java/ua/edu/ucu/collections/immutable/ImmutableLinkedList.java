@@ -181,7 +181,7 @@ public class ImmutableLinkedList implements ImmutableList {
                 current = current.getNext();
                 pos++;
             }
-        } catch (Exception exc) {
+        } catch (NullPointerException ex) {
             return -1;
         }
         return pos;
@@ -256,7 +256,7 @@ public class ImmutableLinkedList implements ImmutableList {
         this.head = head;
     }
 
-    private void setHead(Object head) {
-        this.head = new Node(head);
+    private void setHead(Object obj) {
+        this.head = new Node(obj);
     }
 }
