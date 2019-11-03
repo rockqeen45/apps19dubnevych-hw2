@@ -13,19 +13,19 @@ public class Node {
         return val;
     }
 
-    public void setVal(Object val) {
-        this.val = val;
+    public void setVal(Object value) {
+        this.val = value;
     }
 
     public Node getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
-        this.next = next;
+    public void setNext(Node next_n) {
+        this.next = next_n;
     }
 
-    public void setNext(Object next) {
-        this.next = new Node(next);
+    public void setNext(Object next_n) {
+        this.next = new Node(next_n);
     }
 }

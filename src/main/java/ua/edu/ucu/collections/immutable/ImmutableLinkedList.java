@@ -253,8 +253,8 @@ public class ImmutableLinkedList implements ImmutableList {
         return head;
     }
 
-    private void setHead(Node head) {
-        this.head = head;
+    private void setHead(Node node) {
+        this.head = node;
     }
 
     private void setHead(Object obj) {
