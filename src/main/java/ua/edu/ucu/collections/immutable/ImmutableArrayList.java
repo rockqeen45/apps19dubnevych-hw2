@@ -9,7 +9,7 @@ public class ImmutableArrayList implements ImmutableList {
     }
 
     public ImmutableArrayList(Object[] array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     @Override
@@ -135,6 +135,6 @@ public class ImmutableArrayList implements ImmutableList {
 
     @Override
     public Object[] toArray() {
-        return array;
+        return array.clone();
     }
 }

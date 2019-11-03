@@ -43,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImmutableArrayListTest">
+  <component name="RunManager" selected="JUnit.ImmutableLinkedListTest">
     <configuration name="ImmutableArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ImmutableCollections" />
       <extension name="coverage">
@@ -122,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImmutableLinkedListTest" />
         <item itemvalue="JUnit.ImmutableArrayListTest" />
         <item itemvalue="JUnit.ImmutableArrayListTest.testClear" />
-        <item itemvalue="JUnit.ImmutableLinkedListTest" />
         <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.QueueTest" />
       </list>

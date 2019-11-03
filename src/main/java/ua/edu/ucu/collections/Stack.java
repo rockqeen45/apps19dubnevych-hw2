@@ -5,7 +5,7 @@ import ua.edu.ucu.collections.immutable.ImmutableLinkedList;
 public class Stack {
     private ImmutableLinkedList linkS;
 
-    public Stack(){
+    public Stack() {
         this.linkS = new ImmutableLinkedList();
     }
 
