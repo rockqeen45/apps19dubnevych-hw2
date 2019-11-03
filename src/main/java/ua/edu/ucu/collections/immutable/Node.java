@@ -21,11 +21,11 @@ public class Node {
         return next;
     }
 
-    public void setNext(Node next_n) {
-        this.next = next_n;
+    public void setNext(Node nextN) {
+        this.next = nextN;
     }
 
-    public void setNext(Object next_n) {
-        this.next = new Node(next_n);
+    public void setNext(Object nextN) {
+        this.next = new Node(nextN);
     }
 }
