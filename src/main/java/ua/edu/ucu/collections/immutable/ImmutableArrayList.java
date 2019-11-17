@@ -109,7 +109,7 @@ public class ImmutableArrayList implements ImmutableList {
     public int indexOf(Object e) {
         int i = 0;
         try {
-            while (array[i] != e) {
+            while (!array[i].equals(e)) {
                 i++;
             }
             return i;
